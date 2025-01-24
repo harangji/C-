@@ -1,0 +1,7 @@
+C:\Users\KGA\source\repos\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\KGA\source\repos\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\KGA\source\repos\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\KGA\source\repos\ConsoleApp2\obj\Debug\trumplogic.csproj.AssemblyReference.cache
+C:\Users\KGA\source\repos\ConsoleApp2\obj\Debug\trumplogic.csproj.CoreCompileInputs.cache
+C:\Users\KGA\source\repos\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\KGA\source\repos\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
