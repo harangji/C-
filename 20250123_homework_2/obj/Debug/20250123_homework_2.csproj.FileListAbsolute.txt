@@ -1,0 +1,7 @@
+C:\Users\KGA\source\repos\20250123_homework_2\bin\Debug\20250123_homework_2.exe.config
+C:\Users\KGA\source\repos\20250123_homework_2\bin\Debug\20250123_homework_2.exe
+C:\Users\KGA\source\repos\20250123_homework_2\bin\Debug\20250123_homework_2.pdb
+C:\Users\KGA\source\repos\20250123_homework_2\obj\Debug\20250123_homework_2.csproj.AssemblyReference.cache
+C:\Users\KGA\source\repos\20250123_homework_2\obj\Debug\20250123_homework_2.csproj.CoreCompileInputs.cache
+C:\Users\KGA\source\repos\20250123_homework_2\obj\Debug\20250123_homework_2.exe
+C:\Users\KGA\source\repos\20250123_homework_2\obj\Debug\20250123_homework_2.pdb
