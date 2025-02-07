@@ -1,0 +1,68 @@
+﻿using System;
+
+namespace PM_Simulation
+{
+    class Startpage
+    {
+        static string[] buttons = { "시작", "설정", "종료", "크레딧", "나가기" };
+        static (int x, int y)[] positions = { (30, 10), (40, 10), (50, 10), (30, 12), (45, 12) };
+        static int selectedIndex = 0; // 선택된 버튼
+
+        public Startpage()
+        {
+            playerkey();
+        }
+
+        public void playerkey()
+        {
+            while (true)
+            {
+                Console.SetCursorPosition(0, 0);
+                DrawButtons();
+
+                ConsoleKeyInfo key = Console.ReadKey();
+
+                if (key.Key == ConsoleKey.LeftArrow)
+                    selectedIndex = (selectedIndex - 1 + buttons.Length) % buttons.Length;
+                else if (key.Key == ConsoleKey.RightArrow)
+                    selectedIndex = (selectedIndex + 1) % buttons.Length;
+                else if (key.Key == ConsoleKey.UpArrow)
+                {
+                    if (selectedIndex == 4) { selectedIndex = 2; }//예외
+                    else
+                    if (selectedIndex >= 3) selectedIndex -= 3; // 아래에서 위로 이동
+                }
+                else if (key.Key == ConsoleKey.DownArrow)
+                {
+                    if (selectedIndex == 2) { selectedIndex = 4; } //예외
+                    else
+                    if (selectedIndex < 3 && selectedIndex + 3 < buttons.Length) selectedIndex += 3; // 위에서 아래로 이동
+                }
+                else if (key.Key == ConsoleKey.Enter)
+                {
+                    Console.Clear();
+                    Console.WriteLine($"[{buttons[selectedIndex]}] 버튼이 선택됨!");
+                    break;
+                }
+            }
+        }
+
+        public void DrawButtons()
+        {
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                Console.SetCursorPosition(positions[i].x, positions[i].y);
+                if (i == selectedIndex)
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write($"▶ {buttons[i]} ◀         ");
+                    Console.ResetColor();
+                }
+                else
+                {
+                    Console.Write($"  {buttons[i]}         ");
+                }
+            }
+        }
+    }
+}
