@@ -13,7 +13,7 @@ namespace PM_Simulation
             // Win32 API: 콘솔 창 크기 변경 방지
             private const int MF_BYCOMMAND = 0x00000000;
             private const int SC_MAXIMIZE = 0xF030; // 최대화 버튼 비활성화
-            private const int SC_SIZE = 0xF000;     // 창 크기 조정 비활성화
+            private const int SC_SIZE = 0xF000;     // 창 크기 조정 비활성화 testtest
 
             [DllImport("user32.dll")]
             private static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
